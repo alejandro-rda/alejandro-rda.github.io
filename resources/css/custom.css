@@ -1,0 +1,84 @@
+@media only screen and (max-width: 2048px) {
+    #section0 {
+        background-image: url("../images/cloudcito.png");
+    }
+    #section1{
+        background-image: url("../images/cloud.png");
+    }
+
+    #section2{
+        background-image: url("../images/cloud.png");
+    }
+
+    #section3{
+        background-image: url("../images/cloud.png");
+    }
+
+    #section4{
+        background-image: url("../images/cloud.png");
+    }
+
+    #section5{
+        background-image: url("../images/cloud.png");
+    }
+
+    #section6{
+        background-image: url("../images/cloud.png");
+    }
+
+    #section7{
+        background-image: url("../images/cloud.png");
+    }
+
+    #section8{
+        background-image: url("../images/cloud.png");
+    }
+
+    #section9{
+        background-image: url("../images/cloud.png");
+    }
+
+    #principal{
+        margin-top: 60px;
+    }
+
+}
+.font-title{
+    font-family: "titillium_webblack", Helvetica, Arial, sans-serif;
+    font-size: 64px;
+}
+
+.font-subtitle{
+    font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+}
+
+.font-text-info{
+    font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
+    font-size: 26px;
+}
+
+.font-text-footer{
+    font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+#main-navbar ul li a,
+#main-navbar ul li a:visited {
+    color: white;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-right: 10px;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    text-decoration: none;
+    border-bottom: transparent 1px solid;
+    margin-bottom: 1px;
+    line-height:10px;
+}
+#main-navbar ul li a:hover {
+    border-bottom: white 2px solid;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
