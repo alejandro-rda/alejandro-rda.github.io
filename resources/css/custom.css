@@ -12,7 +12,7 @@
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 1440px) {
     #section0 {
         background-image: url("../images/1366/cloudcito.png");
         background-size: 100%;
@@ -74,8 +74,8 @@
     }
 
     .font-text-footer{
-        font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
-        font-size: 15px;
+        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
+        font-size: 18px;
     }
 
     .profile-photo{
