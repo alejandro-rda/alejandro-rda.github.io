@@ -1,11 +1,32 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
+.section{
+    background-size: cover;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 768px) {
     #section0 {
-        background-image: url("../images/1366/cloudcito.png");
-        background-size: 100%;
+        background: url(../images/2048/cloudcito.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        /* For WebKit*/ -moz-background-size: cover;
+        /* Mozilla*/ -o-background-size: cover;
+        /* Opera*/ background-size: cover;
+        /* Generic*/
+
+    }
+
+}
+
+@media (max-width: 1024px) {
+    #section0 {
+        background: url(../images/2048/cloudcito.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        /* For WebKit*/ -moz-background-size: cover;
+        /* Mozilla*/ -o-background-size: cover;
+        /* Opera*/ background-size: cover;
+        /* Generic*/
 
     }
 
