@@ -5385,6 +5385,11 @@ button.bg-dark:focus {
 .py-5 {
   padding-top: 4.5rem !important; }
 
+.pt-10,
+.py-10 {
+  padding-top: 10rem !important; }
+
+
 .pr-5,
 .px-5 {
   padding-right: 4.5rem !important; }
@@ -5675,7 +5680,7 @@ button.bg-dark:focus {
     margin: 4.5rem !important; }
   .mt-md-5,
   .my-md-5 {
-    margin-top: 4.5rem !important; }
+    margin-top: 12rem !important; }
   .mr-md-5,
   .mx-md-5 {
     margin-right: 4.5rem !important; }
