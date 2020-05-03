@@ -288,11 +288,12 @@
     .font-text-info{
         font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
         font-size: 18px;
+        width: 50%;
     }
 
     .font-text-footer{
         font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
-        font-size: 10px;
+        font-size: 18px;
     }
 
     .space-text{
@@ -309,7 +310,7 @@
     }
 
     .stack-photo{
-        width: 18rem;
+        display: none;
     }
 
     .space-text{
@@ -410,6 +411,7 @@
     .font-text-info{
         font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
         font-size: 18px;
+        width: 80%;
     }
 
     .font-text-footer{
