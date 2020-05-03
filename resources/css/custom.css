@@ -1,206 +1,3 @@
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-
-/* Small devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-    #section0 {
-        background: url(../images/2048/cloudcito.png) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        /* For WebKit*/
-        -moz-background-size: cover;
-        /* Mozilla*/
-        -o-background-size: cover;
-        /* Opera*/
-        background-size: cover;
-        /* Generic*/
-
-
-    }
-
-}
-
-@media (max-width: 1024px) {
-    #section0 {
-        background: url(../images/2048/cloudcito.png) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        /* For WebKit*/ -moz-background-size: cover;
-        /* Mozilla*/ -o-background-size: cover;
-        /* Opera*/ background-size: cover;
-        /* Generic*/
-
-    }
-
-}
-
-@media screen and (max-width: 1440px) and (orientation: portrait) {
-    #section0 {
-        background-image: url("../images/1366/vertical.png");
-        background-size: 100%;
-    }
-
-    #section1{
-        background-image: url("../images/1366/vertical.png");
-    }
-
-    #section2{
-        background-image: url("../images/1366/vertical.png");
-    }
-
-    #section3{
-        background-image: url("../images/1366/vertical.png");
-    }
-
-    #section4{
-        background-image: url("../images/1366/vertical.png");
-    }
-
-    #section5{
-        background-image: url("../images/1366/vertical.png");
-    }
-
-    #section6{
-        background-image: url("../images/1366/vertical.png");
-    }
-
-    #section7{
-        background-image: url("../images/1366/vertical.png");
-    }
-
-    #section8{
-        background-image: url("../images/1366/vertical.png");
-    }
-
-    #section9{
-        background-image: url("../images/1366/vertical.png");
-    }
-
-    #principal{
-        margin-top: 60px;
-    }
-
-    .font-title{
-        font-family: "titillium_webblack", Helvetica, Arial, sans-serif;
-        font-size: 38px;
-    }
-
-    .font-subtitle{
-        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
-        font-size: 20px;
-    }
-
-    .font-text-info{
-        font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
-        font-size: 18px;
-    }
-
-    .font-text-footer{
-        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
-        font-size: 18px;
-    }
-
-    .profile-photo{
-        width: 16rem;
-    }
-
-    .stack-photo{
-        width: 18rem;
-    }
-
-    .space-text{
-        padding-top: 5rem !important;
-    }
-
-    .icon-size{
-        font-size:2em
-    }
-}
-
-
-/* Medium devices (desktops, 992px and up) */
-@media screen and (max-width: 1440px) and (orientation: landscape) {
-    #section0 {
-        background-image: url("../images/1366/cloudcito.png");
-        background-size: 100%;
-
-    }
-    #section1{
-        background-image: url("../images/1366/cloudcito2.png");
-    }
-
-    #section2{
-        background-image: url("../images/1366/cloudcito2.png");
-    }
-
-    #section3{
-        background-image: url("../images/1366/cloudcito2.png");
-    }
-
-    #section4{
-        background-image: url("../images/1366/cloudcito2.png");
-    }
-
-    #section5{
-        background-image: url("../images/1366/cloudcito2.png");
-    }
-
-    #section6{
-        background-image: url("../images/1366/cloudcito2.png");
-    }
-
-    #section7{
-        background-image: url("../images/1366/cloudcito2.png");
-    }
-
-    #section8{
-        background-image: url("../images/1366/cloudcito2.png");
-    }
-
-    #section9{
-        background-image: url("../images/1366/cloudcito2.png");
-    }
-
-    #principal{
-        margin-top: 60px;
-    }
-
-    .font-title{
-        font-family: "titillium_webblack", Helvetica, Arial, sans-serif;
-        font-size: 38px;
-    }
-
-    .font-subtitle{
-        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
-        font-size: 20px;
-    }
-
-    .font-text-info{
-        font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
-        font-size: 18px;
-    }
-
-    .font-text-footer{
-        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
-        font-size: 18px;
-    }
-
-    .profile-photo{
-        width: 16rem;
-    }
-
-    .stack-photo{
-        width: 18rem;
-    }
-
-    .space-text{
-        padding-top: 5rem !important;
-    }
-
-    .icon-size{
-        font-size:2em
-    }
-}
-
 /* Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1440px) {
     #section0 {
@@ -281,6 +78,281 @@
         font-size:5em
     }
 }
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) and (orientation: portrait) {
+    #section0 {
+        background-image: url("../images/1366/vertical.png");
+        background-size: 100%;
+    }
+
+    #section1{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section2{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section3{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section4{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section5{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section6{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section7{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section8{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section9{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #principal{
+        margin-top: 60px;
+    }
+
+    .font-title{
+        font-family: "titillium_webblack", Helvetica, Arial, sans-serif;
+        font-size: 38px;
+    }
+
+    .font-subtitle{
+        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    .font-text-info{
+        font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+    }
+
+    .font-text-footer{
+        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+    }
+
+    .profile-photo{
+        width: 16rem;
+        display: none;
+    }
+
+    .stack-photo{
+        width: 18rem;
+    }
+
+    .space-text{
+        padding-top: 5rem !important;
+    }
+
+    .icon-size{
+        font-size:2em
+    }
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (min-width: 1025px) and (max-width: 1440px) and (orientation: landscape) {
+    #section0 {
+        background-image: url("../images/1366/cloudcito.png");
+        background-size: 100%;
+
+    }
+    #section1{
+        background-image: url("../images/1366/cloudcito.png");
+    }
+
+    #section2{
+        background-image: url("../images/1366/cloudcito.png");
+    }
+
+    #section3{
+        background-image: url("../images/1366/cloudcito.png");
+    }
+
+    #section4{
+        background-image: url("../images/1366/cloudcito.png");
+    }
+
+    #section5{
+        background-image: url("../images/1366/cloudcito.png");
+    }
+
+    #section6{
+        background-image: url("../images/1366/cloudcito.png");
+    }
+
+    #section7{
+        background-image: url("../images/1366/cloudcito.png");
+    }
+
+    #section8{
+        background-image: url("../images/1366/cloudcito.png");
+    }
+
+    #section9{
+        background-image: url("../images/1366/cloudcito.png");
+    }
+
+    #principal{
+        margin-top: 60px;
+    }
+
+    .font-title{
+        font-family: "titillium_webblack", Helvetica, Arial, sans-serif;
+        font-size: 38px;
+    }
+
+    .font-subtitle{
+        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    .font-text-info{
+        font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+    }
+
+    .font-text-footer{
+        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+    }
+
+    .profile-photo{
+        width: 16rem;
+        display: flex;
+
+    }
+
+    .stack-photo{
+        width: 18rem;
+    }
+
+    .space-text{
+        padding-top: 5rem !important;
+    }
+
+    .icon-size{
+        font-size:2em
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #section0 {
+        background: url(../images/2048/cloudcito.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        /* For WebKit*/ -moz-background-size: cover;
+        /* Mozilla*/ -o-background-size: cover;
+        /* Opera*/ background-size: cover;
+        /* Generic*/
+
+    }
+
+    .font-title{
+        font-family: "titillium_webblack", Helvetica, Arial, sans-serif;
+        font-size: 64px;
+    }
+
+    .font-subtitle{
+        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
+        font-size: 40px;
+    }
+
+    .font-text-info{
+        font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
+        font-size: 26px;
+    }
+
+    .font-text-footer{
+        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    .space-text{
+        padding-top: 10rem !important;
+    }
+
+    .icon-size{
+        font-size:5em
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 481px) and (max-width: 767px) {
+    #section0 {
+        background: url(../images/2048/cloudcito.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        /* For WebKit*/
+        -moz-background-size: cover;
+        /* Mozilla*/
+        -o-background-size: cover;
+        /* Opera*/
+        background-size: cover;
+        /* Generic*/
+
+    }
+
+    .font-title{
+        font-family: "titillium_webblack", Helvetica, Arial, sans-serif;
+        font-size: 32px;
+    }
+
+    .font-subtitle{
+        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    .font-text-info{
+        font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+    }
+
+    .font-text-footer{
+        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
+        font-size: 10px;
+    }
+
+    .space-text{
+        padding-top: 10rem !important;
+    }
+
+    .icon-size{
+        font-size:5em
+    }
+
+    .profile-photo{
+        display: none;
+
+    }
+
+    .stack-photo{
+        width: 18rem;
+    }
+
+    .space-text{
+        padding-top: 5rem !important;
+    }
+
+    .icon-size{
+        font-size:2em
+    }
+}
+
+
+
 
 #main-navbar ul li a,
 #main-navbar ul li a:visited {
