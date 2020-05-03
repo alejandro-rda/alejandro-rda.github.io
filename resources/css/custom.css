@@ -1,6 +1,22 @@
-@media only screen and (max-width: 1366px) {
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
     #section0 {
         background-image: url("../images/1366/cloudcito.png");
+        background-size: 100%;
+
+    }
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (max-width: 1366px) {
+    #section0 {
+        background-image: url("../images/1366/cloudcito.png");
+        background-size: 100%;
+
     }
     #section1{
         background-image: url("../images/1366/cloudcito2.png");
@@ -77,12 +93,18 @@
     .icon-size{
         font-size:2em
     }
-
 }
 
-@media only screen and (min-width: 1366px) and (max-width: 2048px) {
+/* Large devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1440px) {
     #section0 {
-        background-image: url("../images/2048/cloudcito.png");
+        background: url(../images/2048/cloudcito.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        /* For WebKit*/ -moz-background-size: cover;
+        /* Mozilla*/ -o-background-size: cover;
+        /* Opera*/ background-size: cover;
+        /* Generic*/
+
     }
     #section1{
         background-image: url("../images/2048/cloudcito.png");
@@ -152,7 +174,6 @@
     .icon-size{
         font-size:5em
     }
-
 }
 
 #main-navbar ul li a,
