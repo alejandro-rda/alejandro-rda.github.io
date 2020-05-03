@@ -357,6 +357,10 @@
         font-size: 18px;
     }
 
+    .font-text-ft-space{
+        margin-top: 5rem;
+    }
+
     .space-text{
         padding-top: 10rem !important;
     }
