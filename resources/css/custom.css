@@ -14,6 +14,8 @@
         /* Opera*/
         background-size: cover;
         /* Generic*/
+
+
     }
 
 }
@@ -31,8 +33,92 @@
 
 }
 
+@media screen and (max-width: 1440px) and (orientation: portrait) {
+    #section0 {
+        background-image: url("../images/1366/vertical.png");
+        background-size: 100%;
+    }
+
+    #section1{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section2{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section3{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section4{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section5{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section6{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section7{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section8{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #section9{
+        background-image: url("../images/1366/vertical.png");
+    }
+
+    #principal{
+        margin-top: 60px;
+    }
+
+    .font-title{
+        font-family: "titillium_webblack", Helvetica, Arial, sans-serif;
+        font-size: 38px;
+    }
+
+    .font-subtitle{
+        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
+        font-size: 20px;
+    }
+
+    .font-text-info{
+        font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+    }
+
+    .font-text-footer{
+        font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+    }
+
+    .profile-photo{
+        width: 16rem;
+    }
+
+    .stack-photo{
+        width: 18rem;
+    }
+
+    .space-text{
+        padding-top: 5rem !important;
+    }
+
+    .icon-size{
+        font-size:2em
+    }
+}
+
+
 /* Medium devices (desktops, 992px and up) */
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) and (orientation: landscape) {
     #section0 {
         background-image: url("../images/1366/cloudcito.png");
         background-size: 100%;
@@ -218,7 +304,6 @@
 #fullpage .section h1 {
     text-align: center;
     color: white;
-    font-size: 3.5em;
     text-transform: uppercase;
 }
 #fullpage .section h2 {
