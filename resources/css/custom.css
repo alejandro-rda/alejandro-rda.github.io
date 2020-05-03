@@ -239,12 +239,14 @@
     top: 0;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    z-index: 0;
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
 }
 .fullpage-wrapper .fp-section.active {
     visibility: visible;
     opacity: 1;
+    z-index: 1;
 }
 .fullpage-wrapper .fp-section .fp-slidesContainer {
     width: 100% !important;
@@ -258,12 +260,14 @@
     top: 0;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    z-index: 0;
+    -webkit-transition: all .7s ease-in-out;
+    transition: all .7s ease-in-out;
 }
 .fullpage-wrapper .fp-section .fp-slidesContainer .fp-slide.active {
     visibility: visible;
     opacity: 1;
+    z-index: 1;
 }
 
 
