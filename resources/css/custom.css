@@ -322,7 +322,7 @@
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 0px) and (max-width: 481px) and (orientation:portrait) {
+@media (min-width: 0px) and (max-width: 480px) and (orientation:portrait) {
     #section0 {
         background: url(../images/1366/vertical.png) no-repeat center center fixed;
         -webkit-background-size: cover;
@@ -383,7 +383,7 @@
 }
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 0px) and (max-width: 481px) and (orientation: landscape){
+@media (min-width: 0px) and (max-width: 480px) and (orientation: landscape){
     #section0 {
         background: url(../images/1366/cloudcito.png) no-repeat center center fixed;
         -webkit-background-size: cover;
