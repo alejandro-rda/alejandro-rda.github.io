@@ -323,7 +323,7 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 0px) and (max-width: 480px) and (orientation:portrait) {
-    #section0 {
+    #section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8 {
         background: url(../images/1366/vertical.png) no-repeat center center fixed;
         -webkit-background-size: cover;
         /* For WebKit*/
@@ -353,7 +353,7 @@
 
     .font-text-footer{
         font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
-        font-size: 10px;
+        font-size: 18px;
     }
 
     .space-text{
@@ -384,7 +384,7 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 0px) and (max-width: 480px) and (orientation: landscape){
-    #section0 {
+    #section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8 {
         background: url(../images/1366/cloudcito.png) no-repeat center center fixed;
         -webkit-background-size: cover;
         /* For WebKit*/
@@ -414,7 +414,7 @@
 
     .font-text-footer{
         font-family: "titillium_websemibold", Helvetica, Arial, sans-serif;
-        font-size: 10px;
+        font-size: 18px;
     }
 
     .space-text{
