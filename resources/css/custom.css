@@ -1,6 +1,6 @@
 /* Large devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1440px) {
-    #section0 {
+    #section0, #section1, #section2, #section3, #section4, #section5, #section6, #section7, #section8 {
         background: url(../images/2048/cloudcito.png) no-repeat center center fixed;
         -webkit-background-size: cover;
         /* For WebKit*/ -moz-background-size: cover;
@@ -8,46 +8,6 @@
         /* Opera*/ background-size: cover;
         /* Generic*/
 
-    }
-    #section1{
-        background-image: url("../images/2048/cloudcito.png");
-    }
-
-    #section2{
-        background-image: url("../images/2048/cloudcito.png");
-    }
-
-    #section3{
-        background-image: url("../images/2048/cloudcito.png");
-    }
-
-    #section4{
-        background-image: url("../images/2048/cloudcito.png");
-    }
-
-    #section5{
-        background-image: url("../images/2048/cloudcito.png");
-    }
-
-    #section6{
-        background-image: url("../images/2048/cloudcito.png");
-    }
-
-    #section7{
-        background-image: url("../images/2048/cloudcito.png");
-    }
-
-    #section8{
-        background-image: url("../images/2048/cloudcito.png");
-    }
-
-
-    #section9{
-        background-image: url("../images/2048/cloudcito.png");
-    }
-
-    #principal{
-        margin-top: 60px;
     }
 
     .font-title{
@@ -63,6 +23,11 @@
     .font-text-info{
         font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
         font-size: 26px;
+    }
+
+    .font-text-info-experience-1{
+        font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
+        font-size: 20px;
     }
 
     .font-text-footer{
@@ -154,6 +119,11 @@
         padding-top: 5rem !important;
     }
 
+    .font-text-info-experience-1{
+        font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
+        font-size: 15px;
+    }
+
     .icon-size{
         font-size:2em
     }
@@ -227,6 +197,11 @@
     .font-text-info{
         font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
         font-size: 18px;
+    }
+
+    .font-text-info-experience-1{
+        font-family: "titillium_weblight", Helvetica, Arial, sans-serif;
+        font-size: 14px;
     }
 
     .font-text-footer{

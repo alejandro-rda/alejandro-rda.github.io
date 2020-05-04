@@ -3103,6 +3103,8 @@ input[type="button"].btn-block {
   min-width: 0;
   word-wrap: break-word;
   background-color: #f3f3f3;
+  box-shadow: 2px 5px 25px 0 rgba(0, 0, 0, 0.2);
+
   background-clip: border-box;
   border: 0px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem; }
@@ -6487,7 +6489,7 @@ body > * {
   background-position: center; }
 
 .bg-aquamarine {
-  background: linear-gradient(-30deg, rgba(79, 112, 206, 0.9) 0%, rgba(18, 187, 173, 0.9) 50%, rgba(18, 187, 173, 0.95) 100%);
+  background: #192144;
   color: white; }
 
 .img-thumbnail {
