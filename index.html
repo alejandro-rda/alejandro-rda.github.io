@@ -1,260 +1,35 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>Alejandro Ruiz - Official WebSite</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--LIBRERIAS CSS -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/alvarotrigo/fullPage.js/9ad42556/jquery.fullPage.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-          type="text/css">
-    <link rel="stylesheet" type="text/css" href="resources/css/tether.css">
-    <link rel="stylesheet" type="text/css" href="resources/css/aquamarine.css">
-    <link rel="stylesheet" href="resources/css/stylesheet.css" type="text/css" charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="resources/css/custom.css">
-
-    <!-- Script: Make my navbar transparent when the document is scrolled to top -->
-    <script src="resources/js/navbar-ontop.js"></script>
-
-    <style>
-        .section {
-            text-align: center;
-        }
-
-    </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <title>¡Trivia!</title>
 </head>
-
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
-    <div class="container">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse justify-content-center" id="main-navbar">
-            <ul class="navbar-nav">
-                <li class="nav-item mx-2">
-                    <a class="nav-link font-text-footer" href="#firstPage">About me</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link font-text-footer" href="#secondPage">Experience</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link font-text-footer" href="#3rdPage">Projects</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link font-text-footer" href="#4thPage">Skills</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link  font-text-footer" href="#5thPage">Hobbies</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link  font-text-footer" href="#6thPage">Influence</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link  font-text-footer" href="#7thPage">Contact</a>
-                </li>
-            </ul>
-        </div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <p>¡Oops! Tus respuestas fueron incorrectas. Intenta de nuevo.</p>
+        <button id="tryAgainBtn">Intentar de nuevo</button>
     </div>
-</nav>
-
-<div id="fullpage">
-    <div class="section" id="section0">
-        <div class="row mt-sm-2 mt-md-5 ml-md-3 mx-auto d-flex justify-content-center">
-            <div class="col-lg-4 col-md-4 ml-md-5">
-                <h1 class="cover-heading text-info font-title mx-auto">ALEJANDRO RUIZ</h1>
-                <p class="text-primary font-subtitle mx-auto">CLOUD ENGINEER | DEVOPS</p>
-                <div><p class="display-5 text-info font-text-info mx-auto">Senior Engineer and DevOps with 5+ years of
-                    experience integrating cloud
-                    platforms</p>
-                </div>
-                <div class="d-flex justify-content-center"><img class="stack-photo"
-                                                                src="resources/images/2048/ts.png" alt="Profile"></div>
-            </div>
-            <div class="col-md-4 mr-md-1 pr-md-2">
-                <div class="col-md-12">
-                    <img class="profile-photo float-left" src="resources/images/2048/f2.png" alt="Profile">
-                </div>
-            </div>
-        </div>
-        <div class="row mt-md-4 mt-sm-2">
-            <div class="col-md-12 text-info font-text-footer font-text-ft-space">Learn more about what I do</div>
-            <div class="col-md-12"><a href="#secondPage"><i class="fa fa-fw fa-chevron-down icon-size"></i></a></div>
-        </div>
-
-    </div>
-    <div class="section" id="section1">
-        <div class="col-lg-12 text-white">
-            <div class="slide">
-                <div class="py-3">
-                    <div class="container mt-md-5">
-                        <div class="row">
-                            <div class="col-md-12" style="">
-                                <h1 class="mb-3 font-text-footer">March 2019 - Now</h1>
-                                <p class="text-primary"><a>InnovarIT</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 p-md-2 p-lg-2">
-                                <div class="card bg-aquamarine">
-                                    <div class="card-body p-lg-2">
-                                        <p class="font-text-info-experience-1">Lead the web, cloud integrations and
-                                            configure Azure resources that communicate and send information to Google
-                                            Cloud
-                                            topics, which supports business capabilities, such as product configuration
-                                            and inventory management</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-md-2  p-lg-2">
-                                <div class="card bg-aquamarine">
-                                    <div class="card-body p-lg-2">
-                                        <p class="font-text-info-experience-1">Increase the online channel sales by 20%
-                                            through the creation of NodeJS and Java microservices in the cloud for the
-                                            retail
-                                            company LATAM Tottus, thereby supporting retail commercial capabilities such
-                                            as Warehouse Management and Supplier
-                                            Management</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-md-2 p-lg-2">
-                                <div class="card bg-aquamarine">
-                                    <div class="card-body p-lg-2">
-                                        <p class="font-text-info-experience-1">Build pipelines for the continuous
-                                            integration and deployment of the retail company Falabella in order to
-                                            accelerate the
-                                            development process, achievement to reduce the delivery time by 50%</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-md-2 p-lg-2">
-                                <div class="card bg-aquamarine">
-                                    <div class="card-body p-lg-2">
-                                        <p class="font-text-info-experience-1">Analyze and design the cloud architecture
-                                            for integration with the “Fazil” mobile application and the web platform
-                                            that
-                                            supports orders created by more than 80,000 users.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="py-3">
-                    <div class="container mt-md-5">
-                        <div class="row">
-                            <div class="col-md-12" style="">
-                                <h1 class="mb-3 font-text-footer">March 2017 - December 2018</h1>
-                                <p class="text-primary"><a>DXC Technology</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 p-md-2 p-lg-2">
-                                <div class="card bg-aquamarine">
-                                    <div class="card-body p-lg-2">
-                                        <p class="font-text-info-experience-1">Improve the organizational efficiency and reduce personnel costs by USD 15 000 per year through the development of the
-                                            backend NodeJS service and deployment of the first mobile application in the region for the attendance record of employees</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-md-2  p-lg-2">
-                                <div class="card bg-aquamarine">
-                                    <div class="card-body p-lg-2">
-                                        <p class="font-text-info-experience-1">Contribution to the return on investment of the project by 65% for the development with Java web services applications and
-                                            deployments on AWS that supported the new applications of Digital Transformation project for the LATAM Telecom Entel.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="py-3">
-                    <div class="container mt-md-5">
-                        <div class="row">
-                            <div class="col-md-12" style="">
-                                <h1 class="mb-3 font-text-footer">May 2016 – March 2017</h1>
-                                <p class="text-primary"><a>CDA Informatica</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 p-md-2 p-lg-2">
-                                <div class="card bg-aquamarine">
-                                    <div class="card-body p-lg-2">
-                                        <p class="font-text-info-experience-1">Reduce personnel costs by USD 30 000 per year for the international bank BBVA to the automation of accounting and financial
-                                            processes, by implementing a new solution with a JAVA web application to safeguard files from legacy systems.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 p-md-2  p-lg-2">
-                                <div class="card bg-aquamarine">
-                                    <div class="card-body p-lg-2">
-                                        <p class="font-text-info-experience-1">Reduce personnel costs by USD 30 000 per year for the international bank BBVA to the automation of accounting and financial
-                                            processes, by implementing a new solution with a JAVA web application to safeguard files from legacy systems.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="py-3">
-                    <div class="container mt-md-5">
-                        <div class="row">
-                            <div class="col-md-12" style="">
-                                <h1 class="mb-3 font-text-footer">June 2015 – December 2015</h1>
-                                <p class="text-primary"><a>Universidad de Lima</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 p-md-2 p-lg-2">
-                                <div class="card bg-aquamarine">
-                                    <div class="card-body p-lg-2">
-                                        <p class="font-text-info-experience-1">Design and plan the mobile Android & IOS project App ULima, achieving to launch the application 2 months before the
-                                            estimate, which benefited more than 20,000 students and teachers.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section" id="section2"><h1 class="display-2 d-none d-md-block text-white">Projects</h1></div>
-    <div class="section" id="section3"><h1 class="display-2 d-none d-md-block text-white">Skills</h1></div>
-    <div class="section" id="section4"><h1 class="display-2 d-none d-md-block text-white">Hobbies</h1></div>
-    <div class="section" id="section5"><h1 class="display-2 d-none d-md-block text-white">Influence</h1></div>
-    <div class="section" id="section6"><h1 class="display-2 d-none d-md-block text-white">Contact</h1></div>
 </div>
 
+<div id="quiz-container">
+    <h1 id="questionTitle"></h1>
+    <p id="questionText"></p>
+    <div id="options-container"></div>
+</div>
 
+<div id="triviaModal" class="modal">
+    <div class="modal-content">
+        <p id="triviaText"></p>
+        <button id="closeTriviaBtn">Continuar</button>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="app.js"></script>
 </body>
-
-<!--LIBRERIAS JS -->
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" style=""></script>
-<script src="resources/js/tether.js"></script>
-<script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
-<script src="https://cdn.rawgit.com/alvarotrigo/fullPage.js/9ad42556/jquery.fullPage.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script>
-    $('#fullpage').fullpage({
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage'],
-        css3: true,
-        scrollingSpeed: 1000
-    });
-
-</script>
-
 </html>
