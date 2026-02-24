@@ -1,0 +1,44 @@
+---
+const articles = [
+  { emoji: "⚽", title: "Harnessing Machine Learning to Revolutionize Football's Set Pieces", type: "Medium", url: "https://alejandror-da.medium.com/" },
+  { emoji: "🐳", title: "Revolutionizing Perforce Client Management with Docker, GitLab CI/CD, and Jenkins", type: "Medium", url: "https://alejandror-da.medium.com/" },
+  { emoji: "👥", title: "Scalable User Management Application with DevOps Best Practices", type: "Medium", url: "https://alejandror-da.medium.com/" },
+  { emoji: "☁️", title: "Cloud Computing for Knowledge Management in Higher Education", type: "Academic", url: "#" },
+];
+---
+<section id="publications" class="py-32 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="reveal text-sm font-mono text-accent uppercase tracking-widest mb-2">Publications & Podcast</h2>
+    <p class="reveal text-3xl sm:text-4xl font-bold text-text mb-4">Words & voice</p>
+    <div class="lightsaber-line w-20 mb-16 reveal"></div>
+
+    <!-- Podcast highlight -->
+    <div class="reveal mb-10 p-6 rounded-2xl border border-accent/20 bg-accent/5 card-hover">
+      <div class="flex items-center gap-4">
+        <div class="text-3xl">🎙️</div>
+        <div class="flex-grow">
+          <h3 class="text-base font-bold text-text">Spotify Podcast</h3>
+          <p class="text-sm text-text-muted">Cloud tech and systems for business — technology meets real-world impact</p>
+        </div>
+        <a href="https://open.spotify.com/episode/0czJwNqovlHKCkANsFhES2" target="_blank" rel="noopener noreferrer"
+           class="shrink-0 px-4 py-2 rounded-lg bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-mono hover:bg-green-500/20 transition-colors">
+          Listen →
+        </a>
+      </div>
+    </div>
+
+    <!-- Articles -->
+    <div class="space-y-4">
+      {articles.map((a) => (
+        <a href={a.url} target="_blank" rel="noopener noreferrer"
+           class="reveal group flex items-center gap-4 p-5 rounded-xl border border-border bg-surface/50 card-hover hover:border-accent/30 transition-all">
+          <div class="text-2xl shrink-0">{a.emoji}</div>
+          <div class="flex-grow">
+            <h3 class="text-sm font-medium text-text group-hover:text-accent transition-colors">{a.title}</h3>
+          </div>
+          <span class="shrink-0 text-xs font-mono px-2 py-0.5 rounded-md bg-surface-light text-text-muted">{a.type}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

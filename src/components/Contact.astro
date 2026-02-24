@@ -1,0 +1,48 @@
+---
+const links = [
+  { href: "mailto:alejandror.devops@gmail.com", label: "alejandror.devops@gmail.com", icon: "📧" },
+  { href: "https://pe.linkedin.com/in/lrda92", label: "LinkedIn", icon: "💼" },
+  { href: "https://github.com/alejandro-rda", label: "GitHub", icon: "🐙" },
+  { href: "https://alejandror-da.medium.com/", label: "Medium", icon: "✍️" },
+  { href: "https://open.spotify.com/episode/0czJwNqovlHKCkANsFhES2", label: "Podcast", icon: "🎙️" },
+];
+---
+<section id="contact" class="py-32 px-6">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="reveal text-sm font-mono text-accent uppercase tracking-widest mb-2">Get In Touch</h2>
+    <p class="reveal text-3xl sm:text-4xl font-bold text-text mb-4">Let's build something together</p>
+    <div class="lightsaber-line w-20 mx-auto mb-8 reveal"></div>
+
+    <p class="reveal text-text-muted leading-relaxed mb-10">
+      Whether you need a cloud architect, a DevOps lead, a football data analyst, or someone who can bridge all three — I'd love to connect. Open to roles in tech, sport, or wherever innovation lives.
+    </p>
+
+    <!-- Language badges -->
+    <div class="reveal flex justify-center gap-3 mb-10">
+      <span class="px-3 py-1 text-xs font-mono rounded-full border border-border bg-surface/50">🇪🇸 Spanish — Native</span>
+      <span class="px-3 py-1 text-xs font-mono rounded-full border border-border bg-surface/50">🇬🇧 English — Full Professional</span>
+    </div>
+
+    <div class="reveal flex flex-wrap justify-center gap-4">
+      {links.map((l) => (
+        <a href={l.href} target="_blank" rel="noopener noreferrer"
+           class="group flex items-center gap-2 px-5 py-3 rounded-xl border border-border bg-surface/50 hover:border-accent hover:bg-surface-light transition-all duration-300 text-sm text-text-muted hover:text-accent">
+          <span>{l.icon}</span>
+          <span class="font-mono text-xs">{l.label}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-8 px-6 border-t border-border/50">
+  <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p class="text-xs text-text-muted font-mono">
+      &copy; 2026 Alejandro Ruiz del Águila. Built with Astro, Tailwind CSS, GSAP & Lenis.
+    </p>
+    <p class="text-xs text-text-muted/40 font-mono italic">
+      "May the deploy be with you" ⚔️
+    </p>
+  </div>
+</footer>

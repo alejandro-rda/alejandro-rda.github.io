@@ -1,0 +1,50 @@
+---
+const passions = [
+  { emoji: "⚽", label: "Football Fanatic", desc: "From analyzing set pieces to cheering in the stands" },
+  { emoji: "🎮", label: "Gamer", desc: "Consoles, PC, and the worlds in between" },
+  { emoji: "🦸", label: "Superhero Nerd", desc: "Marvel, DC — if it has a cape, I'm watching" },
+  { emoji: "⚔️", label: "Star Wars Universe", desc: "May the Force be with your CI/CD pipeline" },
+  { emoji: "🤼", label: "Pro Wrestling Fan", desc: "Lucha libre, WWE — the drama is real to me" },
+  { emoji: "🌍", label: "Explorer", desc: "Passionate about the unknown and what's next" },
+];
+---
+<section id="beyond" class="py-32 px-6 relative overflow-hidden">
+  <!-- Subtle fun background -->
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute top-10 right-20 text-8xl rotate-12 select-none">⚽</div>
+    <div class="absolute bottom-20 left-10 text-7xl -rotate-6 select-none">🎮</div>
+    <div class="absolute top-1/2 right-1/3 text-6xl rotate-45 select-none">⚔️</div>
+  </div>
+
+  <div class="max-w-5xl mx-auto relative z-10">
+    <h2 class="reveal text-sm font-mono text-accent uppercase tracking-widest mb-2">Beyond the Code</h2>
+    <p class="reveal text-3xl sm:text-4xl font-bold text-text mb-2">Sports Geek. Risk Taker. Dad.</p>
+    <div class="lightsaber-line w-20 mb-8 reveal"></div>
+
+    <!-- Personal story -->
+    <div class="reveal max-w-3xl mb-16">
+      <p class="text-text-muted leading-relaxed text-base">
+        I left Peru and moved to Spain chasing dreams — a risk taker by nature who believes in betting on yourself. 
+        That same energy that drives me to architect cloud platforms at scale is what pushes me to explore the unknown, 
+        whether it's a new tech stack, a new city, or a new challenge. Now I'm a proud dad, leveling up both at home 
+        and in tech — because the best deployments are the ones that keep running 24/7. 🚀
+      </p>
+    </div>
+
+    <!-- Passion cards -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+      {passions.map((p) => (
+        <div class="reveal-scale group p-5 rounded-2xl border border-border bg-surface/50 card-hover text-center hover:border-accent/30 transition-all">
+          <div class="text-4xl mb-3 group-hover:scale-125 transition-transform duration-300">{p.emoji}</div>
+          <h3 class="text-sm font-bold text-text mb-1 group-hover:text-accent transition-colors">{p.label}</h3>
+          <p class="text-xs text-text-muted">{p.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <!-- Easter egg quote -->
+    <div class="reveal mt-12 text-center">
+      <p class="text-sm font-mono text-text-muted/40 italic">"Do. Or do not. There is no try." — Yoda (& my deployment philosophy)</p>
+    </div>
+  </div>
+</section>

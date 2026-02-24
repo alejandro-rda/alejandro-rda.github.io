@@ -1,0 +1,29 @@
+---
+const stats = [
+  { value: "500k+", label: "Users on Bingo Metro", sub: "Cencosud · Serverless" },
+  { value: "50%", label: "Faster Time-to-Market", sub: "InnovarIT · Falabella" },
+  { value: "20%", label: "Dev Cycle Acceleration", sub: "Electronic Arts" },
+  { value: "65%", label: "ROI Improvement", sub: "DXC · Entel Perú" },
+  { value: "80k+", label: "App Users Supported", sub: "Tottus · Fazil App" },
+  { value: "8+", label: "Years of Experience", sub: "Multi-cloud · DevOps" },
+];
+---
+<section id="impact" class="py-32 px-6 relative">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="reveal text-sm font-mono text-accent uppercase tracking-widest mb-2">Impact</h2>
+    <p class="reveal text-3xl sm:text-4xl font-bold text-text mb-4">Numbers that tell the story</p>
+    <div class="lightsaber-line w-20 mb-16 reveal"></div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+      {stats.map((stat, i) => (
+        <div class="reveal-scale p-6 rounded-2xl border border-border bg-surface/50 text-center card-hover group">
+          <div class="stat-counter text-4xl sm:text-5xl font-black gradient-text mb-2" data-value={stat.value}>
+            {stat.value}
+          </div>
+          <p class="text-sm font-medium text-text mb-1">{stat.label}</p>
+          <p class="text-xs font-mono text-text-muted">{stat.sub}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

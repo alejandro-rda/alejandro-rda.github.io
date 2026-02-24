@@ -1,0 +1,78 @@
+---
+const links = [
+  { href: "#about", label: "About" },
+  { href: "#impact", label: "Impact" },
+  { href: "#stack", label: "Stack" },
+  { href: "#experience", label: "Experience" },
+  { href: "#projects", label: "Projects" },
+  { href: "#publications", label: "Writing" },
+  { href: "#education", label: "Education" },
+  { href: "#beyond", label: "Beyond" },
+  { href: "#contact", label: "Contact" },
+];
+---
+<nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-dark/80 border-b border-border/50">
+  <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+    <a href="#" class="font-mono text-sm font-bold text-accent tracking-wider">AR<span class="text-accent-alt">DA</span></a>
+    <div class="hidden md:flex items-center gap-6">
+      {links.map((link) => (
+        <a href={link.href} class="text-xs font-mono text-text-muted hover:text-accent transition-colors duration-200 uppercase tracking-wider">
+          {link.label}
+        </a>
+      ))}
+    </div>
+    <div class="flex items-center gap-3">
+      <!-- Theme toggle -->
+      <button id="theme-toggle" class="p-2 rounded-lg border border-border/50 bg-surface/30 hover:border-accent hover:text-accent transition-all duration-300 text-text-muted" aria-label="Toggle theme">
+        <!-- Sun icon (shown in dark mode) -->
+        <svg id="icon-sun" class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+        <!-- Moon icon (shown in light mode) -->
+        <svg id="icon-moon" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+      </button>
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-btn" class="md:hidden text-text-muted hover:text-accent">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+    {links.map((link) => (
+      <a href={link.href} class="block py-2 text-xs font-mono text-text-muted hover:text-accent transition-colors uppercase tracking-wider">
+        {link.label}
+      </a>
+    ))}
+  </div>
+</nav>
+<script>
+  // Mobile menu
+  document.getElementById('mobile-menu-btn')?.addEventListener('click', () => {
+    document.getElementById('mobile-menu')?.classList.toggle('hidden');
+  });
+  document.querySelectorAll('#mobile-menu a').forEach(a => {
+    a.addEventListener('click', () => document.getElementById('mobile-menu')?.classList.add('hidden'));
+  });
+
+  // Theme toggle
+  function updateIcons() {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    document.getElementById('icon-sun')?.classList.toggle('hidden', isLight);
+    document.getElementById('icon-moon')?.classList.toggle('hidden', !isLight);
+  }
+  updateIcons();
+
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const html = document.documentElement;
+    const isLight = html.getAttribute('data-theme') === 'light';
+    const newTheme = isLight ? 'dark' : 'light';
+    html.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateIcons();
+  });
+</script>
+

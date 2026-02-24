@@ -1,0 +1,22 @@
+{
+  "name": "alejandro-rda-portfolio",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "css": "tailwindcss -i src/styles/global.css -o public/styles/global.css --minify",
+    "dev": "astro dev",
+    "build": "npm run css && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.17.3",
+    "gsap": "^3.13.0",
+    "lenis": "^1.2.3",
+    "tailwindcss": "^3.4.19"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6"
+  }
+}

@@ -1,0 +1,30 @@
+---
+const projects = [
+  { emoji: "⚽", title: "GreenPredictor", subtitle: "Football Analytics Engine", desc: "Independent football analytics project applying Poisson models, equilibrium filters, and rolling-window metrics to rival scouting and set piece analysis. Coach-facing reports built with Python/SQL.", tags: ["Python", "SQL", "Poisson", "Scouting", "Set Pieces"] },
+  { emoji: "🎰", title: "Bingo Metro", subtitle: "500k+ Users · Cencosud", desc: "Designed a serverless online bingo platform for a Christmas retail campaign in Peru. Built with AWS Amplify, AppSync, Lambda, S3, and architected for traffic spikes.", tags: ["AWS", "Serverless", "AppSync", "Lambda", "500k users"] },
+  { emoji: "🦅", title: "Embajadur App", subtitle: "Football Club Donations", desc: "Leading an initiative to economically stabilize Peru's most decorated football club through a donations platform, connecting fans with their team's future.", tags: ["Platform", "Football", "Community", "Impact"] },
+];
+---
+<section id="projects" class="py-32 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="reveal text-sm font-mono text-accent uppercase tracking-widest mb-2">Featured Projects</h2>
+    <p class="reveal text-3xl sm:text-4xl font-bold text-text mb-4">Things I've built</p>
+    <div class="lightsaber-line w-20 mb-16 reveal"></div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      {projects.map((p) => (
+        <div class="reveal-scale group p-8 rounded-2xl border border-border bg-surface/50 card-hover flex flex-col">
+          <div class="text-4xl mb-4">{p.emoji}</div>
+          <h3 class="text-lg font-bold text-text group-hover:text-accent transition-colors mb-1">{p.title}</h3>
+          <p class="text-xs font-mono text-accent mb-3">{p.subtitle}</p>
+          <p class="text-sm text-text-muted leading-relaxed mb-4 flex-grow">{p.desc}</p>
+          <div class="flex flex-wrap gap-1.5">
+            {p.tags.map((tag) => (
+              <span class="px-2 py-0.5 text-xs font-mono rounded-md bg-surface-light text-text-muted border border-border/50">{tag}</span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

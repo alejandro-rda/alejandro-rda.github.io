@@ -1,0 +1,115 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import ImpactHighlights from '../components/ImpactHighlights.astro';
+import TechStack from '../components/TechStack.astro';
+import Experience from '../components/Experience.astro';
+import FeaturedProjects from '../components/FeaturedProjects.astro';
+import Publications from '../components/Publications.astro';
+import Education from '../components/Education.astro';
+import BeyondTheCode from '../components/BeyondTheCode.astro';
+import Contact from '../components/Contact.astro';
+---
+<Layout>
+  <Navbar />
+  <main>
+    <Hero />
+    <About />
+    <ImpactHighlights />
+    <TechStack />
+    <Experience />
+    <FeaturedProjects />
+    <Publications />
+    <Education />
+    <BeyondTheCode />
+    <Contact />
+  </main>
+</Layout>
+
+<script>
+  import { gsap } from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+  import Lenis from 'lenis';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  // --- Lenis smooth scroll ---
+  const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smoothWheel: true,
+  });
+
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add((time: number) => { lenis.raf(time * 1000); });
+  gsap.ticker.lagSmoothing(0);
+
+  // --- Scroll-triggered reveals ---
+  function initReveals() {
+    gsap.utils.toArray<HTMLElement>('.reveal').forEach((el) => {
+      gsap.to(el, {
+        opacity: 1, y: 0,
+        duration: 0.8, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 85%', once: true },
+      });
+    });
+    gsap.utils.toArray<HTMLElement>('.reveal-left').forEach((el) => {
+      gsap.to(el, {
+        opacity: 1, x: 0,
+        duration: 0.8, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 85%', once: true },
+      });
+    });
+    gsap.utils.toArray<HTMLElement>('.reveal-right').forEach((el) => {
+      gsap.to(el, {
+        opacity: 1, x: 0,
+        duration: 0.8, ease: 'power2.out',
+        scrollTrigger: { trigger: el, start: 'top 85%', once: true },
+      });
+    });
+    gsap.utils.toArray<HTMLElement>('.reveal-scale').forEach((el, i) => {
+      gsap.to(el, {
+        opacity: 1, scale: 1,
+        duration: 0.6, ease: 'back.out(1.4)',
+        delay: (i % 6) * 0.08,
+        scrollTrigger: { trigger: el, start: 'top 88%', once: true },
+      });
+    });
+  }
+
+  // --- Hero subtitle rotation ---
+  function initSubtitleRotator() {
+    const rotator = document.getElementById('subtitle-rotator');
+    if (!rotator) return;
+    const items = rotator.querySelectorAll('.subtitle-item');
+    const h = items[0]?.clientHeight || 40;
+    let current = 0;
+    setInterval(() => {
+      current = (current + 1) % items.length;
+      gsap.to(rotator, { y: -current * h, duration: 0.6, ease: 'power2.inOut' });
+    }, 2500);
+  }
+
+  // --- Parallax orbs ---
+  function initParallax() {
+    gsap.utils.toArray<HTMLElement>('.parallax-bg').forEach((el, i) => {
+      gsap.to(el, {
+        y: (i % 2 === 0 ? -80 : 80),
+        scrollTrigger: {
+          trigger: el.parentElement,
+          start: 'top bottom', end: 'bottom top',
+          scrub: 1.5,
+        },
+      });
+    });
+  }
+
+  // --- Init ---
+  document.addEventListener('DOMContentLoaded', () => {
+    initReveals();
+    initSubtitleRotator();
+    initParallax();
+  });
+</script>
