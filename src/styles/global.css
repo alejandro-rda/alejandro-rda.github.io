@@ -121,3 +121,9 @@ body {
 [data-theme="light"] ::selection {
   color: rgb(var(--color-base));
 }
+
+/* ===== Easter Egg Animations ===== */
+@keyframes egg-glow-pulse {
+  0%, 100% { text-shadow: 0 0 10px currentColor, 0 0 20px currentColor; }
+  50% { text-shadow: 0 0 30px currentColor, 0 0 60px currentColor, 0 0 90px currentColor; }
+}
